@@ -1,0 +1,127 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Thank you</title>
+
+<!-- Dont forget to customize meta      -->
+    <meta name="description" content="">
+    <meta name="keywords" content="html, css, marketing">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!--  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/botstrap.min.css" integrity="sha384-lq8mTJ0" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+</head>
+<body>
+    .<div class="jumbotron jumbotron-fluid">
+
+<!--- Body of text inside a container -->
+        <div class="container">
+            <h1 class="display-3">Your payment was successful!</h1>
+            <p class="lead"> Please fill in your candidate information to receive your prediction </p>
+
+              <!--- Begin form -->
+              <form method="POST" action="/results">
+                  <div class="form-group"> <input type="text" name="Age" placeholder="Age"> </div>
+                  <div class="form-group">
+                    <label for="BusinessTravel">Frequency of business trips</label>
+                    <select type="int" name="BusinessTravel">
+                          <option>Travel_Rarely</option>
+                          <option>Travel_Frequently</option>
+                          <option>Non-Travel</option>
+                    </select>
+                    </div>
+                  <div class="form-group">
+                    <label for="Department">Department</label>
+                    <select type="text" name="Department">
+                          <option>Sales</option>
+                          <option>Research & Development</option>
+                          <option>Human Resources</option>
+                    </select>
+                    </div>
+                  <div class="form-group"> <input type="text" name="DistanceFromHome" placeholder="Distance of work from home"> </div>
+                  <div class="form-group">
+                    <label for="Education">Education</label>
+                    <select type="text" name="Education">
+                          <option>Below College</option>
+                          <option>College</option>
+                          <option>Bachelor</option>
+                          <option>Master</option>
+                          <option>Doctor</option>
+                    </select>
+                    </div>
+                  <div class="form-group">
+                    <label for="EducationField">Education Field</label>
+                    <select type="text" name="EducationField">
+                          <option>Life Sciences</option>
+                          <option>Medical</option>
+                          <option>Marketing</option>
+                          <option>Technical Degree</option>
+                          <option>Human Resources</option>
+                          <option>Other</option>
+                    </select>
+                    </div>
+                  <div class="form-group"> <input type="text" name="EnvironmentSatisfaction" placeholder="Satisfaction with work location (1 to 5)"> </div>
+                  <div class="form-group">
+                    <label for="Gender">Gender</label>
+                    <select type="text" name="Gender">
+                          <option>Male</option>
+                          <option>Female </option>
+                    </select>
+                    </div>
+                  <div class="form-group">
+                    <label for="JobRole">Job Role</label>
+                    <select type="text" name="JobRole">
+                          <option>Sales Executive</option>
+                          <option>Research Scientist</option>
+                          <option>Laboratory Technician</option>
+                          <option>Manufacturing Director</option>
+                          <option>Healthcare Representative</option>
+                          <option>Manager</option>
+                          <option>Sales Representative</option>
+                          <option>Research Director</option>
+                          <option>Human Resources</option>
+                    </select>
+                    </div>
+                  <div class="form-group">
+                    <label for="MaritalStatus">Marital Status</label>
+                    <select type="text" name="MaritalStatus">
+                          <option>Single</option>
+                          <option>Married</option>
+                          <option>Divorced</option>
+                    </select>
+                    </div>
+                  <div class="form-group"> <input type="text" name="MonthlyIncome" placeholder="Monthly Income"> </div>
+                  <div class="form-group"> <input type="text" name="NumCompaniesWorked" placeholder="Number of previous companies"> </div>
+                  <div class="form-group">
+                    <label for="OverTime">Over Time</label>
+                    <select type="text" name="OverTime">
+                          <option>Yes</option>
+                          <option>No</option>
+                    </select>
+                    </div>
+                  <div class="form-group"> <input type="text" name="PercentSalaryHike" placeholder="Percentage increase in salary (integer)"> </div>
+                  <div class="form-group"> <input type="text" name="StandardHours" placeholder="Hours worked per fortnight"> </div>
+                  <div class="form-group"> <input type="text" name="StockOptionLevel_0to3" placeholder="Stock stock option level (0 to 3)"> </div>
+                  <div class="form-group"> <input type="text" name="TotalWorkingYears" placeholder="Total years in workforce"> </div>
+                  <div class="form-group"> <input type="text" name="WorkLifeBalance_1to5" placeholder="Previous worklife balance (1 to 5)"> </div>
+                  <div class="form-group"> <input type="text" name="YearsAtCompany" placeholder="Years at previous company"> </div>
+                  <div class="form-group"> <input type="text" name="YearsInCurrentRole" placeholder="Years at previous role"> </div>
+                  <div class="form-group"> <input type="text" name="YearsSinceLastPromotion" placeholder="Years since last promotion"> </div>
+                  <div class="form-group"> <input type="text" name="YearsWithCurrManager" placeholder="Years with current manager"> </div>
+
+                <input class="btn btn-primary" type="submit" value="submit">
+              </form>
+
+        </div>
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.1.1/js/all.js" integrity="sha384-BtvRZcyfv4r0x/phJt9Y9HhnN5ur1Z+kZbKVgzVBAlQZX4jvAuImlIz+bG7TS00a" crossorigin="anonymous"></script>
+</body>
+</html>
