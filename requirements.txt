@@ -14,7 +14,7 @@ Flask-Script==2.0.6
 Flask-SQLAlchemy==2.3.2
 Flask-Testing==0.7.1
 Flask-WTF==0.12
-joblib==0.14.0
+joblib==1.2.0
 jsonify==0.5
 numpy==1.17.2
 pandas==0.25.1
